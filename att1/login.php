@@ -46,7 +46,7 @@ if (mysqli_num_rows($result) == 1) {
     $subject = $row['Subject'];
     $_SESSION['Subject'] = $subject ;
     // echo $_SESSION['Subject'];
-   header("Location: tdashboard.php");
+   header("Location: tdashboard_dhruv.php");
     exit();
   }
 } 

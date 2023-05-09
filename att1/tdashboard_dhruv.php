@@ -1,5 +1,5 @@
 <?php
-session_start();
+ session_start();
 
 // Check if the user is logged in as a student
 if (!isset($_SESSION['role']) || $_SESSION['role'] != 'teacher') {
@@ -18,7 +18,7 @@ $conn = mysqli_connect($servername, $username, $password, $dbname);
 
 $subject = $_SESSION['Subject'];
 $table_name = strtolower(date('l'));
-if ($table_name != 'saturday' && $table_name != 'sunday') {
+if($table_name!='saturday' && $table_name!='sunday'){
 	$query1 = "SELECT * FROM $table_name WHERE `Lecture_A`='$subject' ";
 	$query2 = "SELECT * FROM $table_name WHERE `Lecture_B`='$subject' ";
 
@@ -27,7 +27,7 @@ if ($table_name != 'saturday' && $table_name != 'sunday') {
 	$result1 = mysqli_query($conn, $query1);
 	$result2 = mysqli_query($conn, $query2);
 
-
+	
 	// Check if the query was successful
 	if (!$result1 || !$result2) {
 		die('Query failed: ' . mysqli_error($conn));
@@ -37,22 +37,18 @@ if ($table_name != 'saturday' && $table_name != 'sunday') {
 ?>
 <!DOCTYPE html>
 <html>
-
 <head>
 	<title>Student Dashboard</title>
 	<!-- Include Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
-
 <body>
 	<div class="container">
 		<div class="header">
 			<h1>Teacher Dashboard</h1>
-			<p>Welcome,
-				<?php echo $_SESSION['name']; ?>
-			</p>
+			<p>Welcome, <?php echo $_SESSION['name']; ?></p>
 		</div>
-
+		
 
 		<?php if ($table_name == 'saturday' || $table_name == 'sunday') { ?>
 			<h2>Today is holiday</h2>
@@ -63,7 +59,7 @@ if ($table_name != 'saturday' && $table_name != 'sunday') {
 				<thead>
 					<tr>
 						<th scope="col">Time</th>
-						<th scope="col">Division</th>
+						<th scope="col">Division</th>	
 						<th scope="col">Subject</th>
 						<th scope="col"></th>
 
@@ -72,48 +68,44 @@ if ($table_name != 'saturday' && $table_name != 'sunday') {
 				<tbody>
 					<?php while ($row = mysqli_fetch_assoc($result1)) { ?>
 						<tr>
-							<td>
-								<?php echo $row['Time_A']; ?>
-							</td>
+							<td><?php echo $row['Time_A']; ?></td>
 							<td>A</td>
-							<td>
-								<?php echo $row['Lecture_A']; ?>
-							</td>
+							<td><?php echo $row['Lecture_A']; ?></td>
 							<td>
 								<form method="POST" action="manual_attendence.php" style="margin:5px">
 									<input type="hidden" name="Division" value="A">
-									<button type="submit" name="manual_attendence" class="btn btn-primary">Manual
-										Attendance</button>
+									<input type="hidden" name="time" value="<?php echo $row['Time_A'];?>">
+									<input type="hidden" name="lecture" value="<?php echo $row['Lecture_A'];?>">
+									<button type="submit" name="manual_attendence" class="btn btn-primary">Manual Attendance</button>
 								</form>
-								<form method="POST" action="password_attendence.php" style="margin:5px">
+								<form method="POST" action="take_attendence_dhruv.php" style="margin:5px">	
 									<input type="hidden" name="Division" value="A">
-									<button type="submit" name="password_attendence" class="btn btn-secondary">Password
-										Attendance</button>
+									<input type="hidden" name="time" value="<?php echo $row['Time_A'];?>">
+									<input type="hidden" name="lecture" value="<?php echo $row['Lecture_A'];?>">
+									<button type="submit" name="password_attendence" class="btn btn-secondary">Password Attendance</button>
 								</form>
-							</td>
+                        	</td>
 						</tr>
 					<?php } ?>
 					<?php while ($row = mysqli_fetch_assoc($result2)) { ?>
 						<tr>
-							<td>
-								<?php echo $row['Time_B']; ?>
-							</td>
+							<td><?php echo $row['Time_B'] ; ?></td>
 							<td>B</td>
-							<td>
-								<?php echo $row['Lecture_B']; ?>
-							</td>
+							<td><?php echo $row['Lecture_B']; ?></td>
 							<td>
 								<form method="POST" action="manual_attendence.php" style="margin:5px">
 									<input type="hidden" name="Division" value="B">
-									<button type="submit" name="manual_attendence" class="btn btn-primary">Manual
-										Attendance</button>
+									<input type="hidden" name="time" value="<?php echo $row['Time_B'];?>">
+									<input type="hidden" name="lecture" value="<?php echo $row['Lecture_B'];?>">
+									<button type="submit" name="manual_attendence" class="btn btn-primary">Manual Attendance</button>
 								</form>
-								<form method="POST" action="password_attendence.php" style="margin:5px">
-									<input type="hidden" name="Division" value="B">
-									<button type="submit" name="password_attendence" class="btn btn-secondary">Password
-										Attendance</button>
+								<form method="POST" action="take_attendence.php" style="margin:5px">
+									<input type="hidden" name="Division" value="B">	
+									<input type="hidden" name="time" value="<?php echo $row['Time_B'];?>">
+									<input type="hidden" name="lecture" value="<?php echo $row['Lecture_B'];?>">
+									<button type="submit" name="password_attendence" class="btn btn-secondary">Password Attendance</button>
 								</form>
-							</td>
+                        	</td>
 						</tr>
 					<?php } ?>
 				</tbody>
@@ -128,5 +120,4 @@ if ($table_name != 'saturday' && $table_name != 'sunday') {
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
-
 </html>
