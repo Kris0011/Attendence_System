@@ -1,0 +1,1181 @@
+-- phpMyAdmin SQL Dump
+-- version 5.2.0
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: May 15, 2023 at 04:01 PM
+-- Server version: 10.4.27-MariaDB
+-- PHP Version: 8.2.0
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `ce`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `english`
+--
+
+CREATE TABLE `english` (
+  `Sr.` int(11) NOT NULL,
+  `Roll No.` varchar(5) NOT NULL,
+  `Division` char(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `english`
+--
+
+INSERT INTO `english` (`Sr.`, `Roll No.`, `Division`) VALUES
+(1, 'CE001', 'A'),
+(2, 'CE002', 'A'),
+(3, 'CE003', 'A'),
+(4, 'CE004', 'A'),
+(5, 'CE005', 'A'),
+(6, 'CE006', 'A'),
+(7, 'CE007', 'A'),
+(8, 'CE008', 'A'),
+(9, 'CE009', 'A'),
+(10, 'CE010', 'A'),
+(11, 'CE011', 'A'),
+(12, 'CE012', 'A'),
+(13, 'CE013', 'A'),
+(14, 'CE014', 'A'),
+(15, 'CE015', 'A'),
+(16, 'CE016', 'A'),
+(17, 'CE017', 'A'),
+(18, 'CE018', 'A'),
+(19, 'CE019', 'A'),
+(20, 'CE020', 'A'),
+(21, 'CE021', 'A'),
+(22, 'CE022', 'A'),
+(23, 'CE023', 'A'),
+(24, 'CE024', 'A'),
+(25, 'CE025', 'A'),
+(26, 'CE026', 'A'),
+(27, 'CE027', 'A'),
+(28, 'CE028', 'A'),
+(29, 'CE029', 'A'),
+(30, 'CE030', 'A'),
+(31, 'CE031', 'A'),
+(32, 'CE032', 'A'),
+(33, 'CE033', 'A'),
+(34, 'CE034', 'A'),
+(35, 'CE035', 'A'),
+(36, 'CE036', 'A'),
+(37, 'CE037', 'A'),
+(38, 'CE038', 'A'),
+(39, 'CE039', 'A'),
+(40, 'CE040', 'A'),
+(41, 'CE041', 'A'),
+(42, 'CE042', 'A'),
+(43, 'CE043', 'A'),
+(44, 'CE044', 'A'),
+(45, 'CE045', 'A'),
+(46, 'CE046', 'A'),
+(47, 'CE047', 'A'),
+(48, 'CE048', 'A'),
+(49, 'CE049', 'A'),
+(50, 'CE050', 'A'),
+(51, 'CE051', 'A'),
+(52, 'CE052', 'A'),
+(53, 'CE053', 'A'),
+(54, 'CE054', 'A'),
+(55, 'CE055', 'A'),
+(56, 'CE056', 'A'),
+(57, 'CE057', 'A'),
+(58, 'CE058', 'A'),
+(59, 'CE059', 'A'),
+(60, 'CE060', 'A'),
+(61, 'CE061', 'A'),
+(62, 'CE062', 'A'),
+(63, 'CE063', 'A'),
+(64, 'CE064', 'A'),
+(65, 'CE065', 'A'),
+(66, 'CE066', 'A'),
+(67, 'CE067', 'A'),
+(68, 'CE068', 'A'),
+(69, 'CE069', 'A'),
+(70, 'CE070', 'A'),
+(71, 'CE071', 'A'),
+(72, 'CE072', 'A'),
+(73, 'CE073', 'A'),
+(74, 'CE074', 'A'),
+(75, 'CE075', 'A'),
+(76, 'CE076', 'A'),
+(77, 'CE077', 'A'),
+(78, 'CE078', 'B'),
+(79, 'CE079', 'B'),
+(80, 'CE080', 'B'),
+(81, 'CE081', 'B'),
+(82, 'CE082', 'B'),
+(83, 'CE083', 'B'),
+(84, 'CE084', 'B'),
+(85, 'CE085', 'B'),
+(86, 'CE086', 'B'),
+(87, 'CE087', 'B'),
+(88, 'CE088', 'B'),
+(89, 'CE089', 'B'),
+(90, 'CE090', 'B'),
+(91, 'CE091', 'B'),
+(92, 'CE092', 'B'),
+(93, 'CE093', 'B'),
+(94, 'CE094', 'B'),
+(95, 'CE095', 'B'),
+(96, 'CE096', 'B'),
+(97, 'CE097', 'B'),
+(98, 'CE098', 'B'),
+(99, 'CE099', 'B'),
+(100, 'CE100', 'B'),
+(101, 'CE101', 'B'),
+(102, 'CE102', 'B'),
+(103, 'CE103', 'B'),
+(104, 'CE104', 'B'),
+(105, 'CE105', 'B'),
+(106, 'CE106', 'B'),
+(107, 'CE107', 'B'),
+(108, 'CE108', 'B'),
+(109, 'CE109', 'B'),
+(110, 'CE110', 'B'),
+(111, 'CE111', 'B'),
+(112, 'CE112', 'B'),
+(113, 'CE113', 'B'),
+(114, 'CE114', 'B'),
+(115, 'CE115', 'B'),
+(116, 'CE116', 'B'),
+(117, 'CE117', 'B'),
+(118, 'CE118', 'B'),
+(119, 'CE119', 'B'),
+(120, 'CE120', 'B'),
+(121, 'CE121', 'B'),
+(122, 'CE122', 'B'),
+(123, 'CE123', 'B'),
+(124, 'CE124', 'B'),
+(125, 'CE125', 'B'),
+(126, 'CE126', 'B'),
+(127, 'CE127', 'B'),
+(128, 'CE128', 'B'),
+(129, 'CE129', 'B'),
+(130, 'CE130', 'B'),
+(131, 'CE131', 'B'),
+(132, 'CE132', 'B'),
+(133, 'CE133', 'B'),
+(134, 'CE134', 'B'),
+(135, 'CE135', 'B'),
+(136, 'CE136', 'B'),
+(137, 'CE137', 'B'),
+(138, 'CE138', 'B'),
+(139, 'CE139', 'B'),
+(140, 'CE140', 'B'),
+(141, 'CE141', 'B'),
+(142, 'CE142', 'B'),
+(143, 'CE143', 'B'),
+(144, 'CE144', 'B'),
+(145, 'CE145', 'B'),
+(146, 'CE146', 'B'),
+(147, 'CE147', 'B'),
+(148, 'CE148', 'B'),
+(149, 'CE149', 'B'),
+(150, 'CE150', 'B'),
+(151, 'CE151', 'B'),
+(152, 'CE152', 'B'),
+(153, 'CE153', 'B');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `friday`
+--
+
+CREATE TABLE `friday` (
+  `No.` int(11) NOT NULL,
+  `Time_A` time NOT NULL,
+  `Lecture_A` varchar(50) DEFAULT NULL,
+  `Time_B` time NOT NULL,
+  `Lecture_B` varchar(50) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `friday`
+--
+
+INSERT INTO `friday` (`No.`, `Time_A`, `Lecture_A`, `Time_B`, `Lecture_B`) VALUES
+(1, '10:45:00', 'Maths-2', '14:30:00', 'Env. Studies'),
+(2, '11:45:00', 'PPS-2', '15:30:00', 'Env. Studies'),
+(3, '12:45:00', 'Maths-2', '16:35:00', 'Physics');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `maths-2`
+--
+
+CREATE TABLE `maths-2` (
+  `Sr.` int(11) NOT NULL,
+  `Roll No.` varchar(5) NOT NULL,
+  `Division` char(1) NOT NULL,
+  `10-05-23` varchar(10) DEFAULT 'None'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `maths-2`
+--
+
+INSERT INTO `maths-2` (`Sr.`, `Roll No.`, `Division`, `10-05-23`) VALUES
+(1, 'CE001', 'A', 'Present'),
+(2, 'CE002', 'A', 'Present'),
+(3, 'CE003', 'A', 'Present'),
+(4, 'CE004', 'A', 'Present'),
+(5, 'CE005', 'A', 'Present'),
+(6, 'CE006', 'A', 'Present'),
+(7, 'CE007', 'A', 'Present'),
+(8, 'CE008', 'A', 'Present'),
+(9, 'CE009', 'A', 'Present'),
+(10, 'CE010', 'A', 'Present'),
+(11, 'CE011', 'A', 'Present'),
+(12, 'CE012', 'A', 'Present'),
+(13, 'CE013', 'A', 'Present'),
+(14, 'CE014', 'A', 'Present'),
+(15, 'CE015', 'A', 'Present'),
+(16, 'CE016', 'A', 'Present'),
+(17, 'CE017', 'A', 'Present'),
+(18, 'CE018', 'A', 'Present'),
+(19, 'CE019', 'A', 'Present'),
+(20, 'CE020', 'A', 'Present'),
+(21, 'CE021', 'A', 'Present'),
+(22, 'CE022', 'A', 'Present'),
+(23, 'CE023', 'A', 'Present'),
+(24, 'CE024', 'A', 'Present'),
+(25, 'CE025', 'A', 'Present'),
+(26, 'CE026', 'A', 'Present'),
+(27, 'CE027', 'A', 'Present'),
+(28, 'CE028', 'A', 'Present'),
+(29, 'CE029', 'A', 'Present'),
+(30, 'CE030', 'A', 'Present'),
+(31, 'CE031', 'A', 'Present'),
+(32, 'CE032', 'A', 'Present'),
+(33, 'CE033', 'A', 'Present'),
+(34, 'CE034', 'A', 'Present'),
+(35, 'CE035', 'A', 'Present'),
+(36, 'CE036', 'A', 'Present'),
+(37, 'CE037', 'A', 'Present'),
+(38, 'CE038', 'A', 'Present'),
+(39, 'CE039', 'A', 'Present'),
+(40, 'CE040', 'A', 'Present'),
+(41, 'CE041', 'A', 'Present'),
+(42, 'CE042', 'A', 'Present'),
+(43, 'CE043', 'A', 'Present'),
+(44, 'CE044', 'A', 'Present'),
+(45, 'CE045', 'A', 'Present'),
+(46, 'CE046', 'A', 'Present'),
+(47, 'CE047', 'A', 'Present'),
+(48, 'CE048', 'A', 'Present'),
+(49, 'CE049', 'A', 'Present'),
+(50, 'CE050', 'A', 'Present'),
+(51, 'CE051', 'A', 'Present'),
+(52, 'CE052', 'A', 'Present'),
+(53, 'CE053', 'A', 'Present'),
+(54, 'CE054', 'A', 'Present'),
+(55, 'CE055', 'A', 'Present'),
+(56, 'CE056', 'A', 'Present'),
+(57, 'CE057', 'A', 'Present'),
+(58, 'CE058', 'A', 'Present'),
+(59, 'CE059', 'A', 'Present'),
+(60, 'CE060', 'A', 'Present'),
+(61, 'CE061', 'A', 'Present'),
+(62, 'CE062', 'A', 'Present'),
+(63, 'CE063', 'A', 'Present'),
+(64, 'CE064', 'A', 'Present'),
+(65, 'CE065', 'A', 'Present'),
+(66, 'CE066', 'A', 'Present'),
+(67, 'CE067', 'A', 'Present'),
+(68, 'CE068', 'A', 'Present'),
+(69, 'CE069', 'A', 'Present'),
+(70, 'CE070', 'A', 'Present'),
+(71, 'CE071', 'A', 'Present'),
+(72, 'CE072', 'A', 'Present'),
+(73, 'CE073', 'A', 'Present'),
+(74, 'CE074', 'A', 'Present'),
+(75, 'CE075', 'A', 'Present'),
+(76, 'CE076', 'A', 'Present'),
+(77, 'CE077', 'A', 'Present'),
+(78, 'CE078', 'B', 'None'),
+(79, 'CE079', 'B', 'None'),
+(80, 'CE080', 'B', 'None'),
+(81, 'CE081', 'B', 'None'),
+(82, 'CE082', 'B', 'None'),
+(83, 'CE083', 'B', 'None'),
+(84, 'CE084', 'B', 'None'),
+(85, 'CE085', 'B', 'None'),
+(86, 'CE086', 'B', 'None'),
+(87, 'CE087', 'B', 'None'),
+(88, 'CE088', 'B', 'None'),
+(89, 'CE089', 'B', 'None'),
+(90, 'CE090', 'B', 'None'),
+(91, 'CE091', 'B', 'None'),
+(92, 'CE092', 'B', 'None'),
+(93, 'CE093', 'B', 'None'),
+(94, 'CE094', 'B', 'None'),
+(95, 'CE095', 'B', 'None'),
+(96, 'CE096', 'B', 'None'),
+(97, 'CE097', 'B', 'None'),
+(98, 'CE098', 'B', 'None'),
+(99, 'CE099', 'B', 'None'),
+(100, 'CE100', 'B', 'None'),
+(101, 'CE101', 'B', 'None'),
+(102, 'CE102', 'B', 'None'),
+(103, 'CE103', 'B', 'None'),
+(104, 'CE104', 'B', 'None'),
+(105, 'CE105', 'B', 'None'),
+(106, 'CE106', 'B', 'None'),
+(107, 'CE107', 'B', 'None'),
+(108, 'CE108', 'B', 'None'),
+(109, 'CE109', 'B', 'None'),
+(110, 'CE110', 'B', 'None'),
+(111, 'CE111', 'B', 'None'),
+(112, 'CE112', 'B', 'None'),
+(113, 'CE113', 'B', 'None'),
+(114, 'CE114', 'B', 'None'),
+(115, 'CE115', 'B', 'None'),
+(116, 'CE116', 'B', 'None'),
+(117, 'CE117', 'B', 'None'),
+(118, 'CE118', 'B', 'None'),
+(119, 'CE119', 'B', 'None'),
+(120, 'CE120', 'B', 'None'),
+(121, 'CE121', 'B', 'None'),
+(122, 'CE122', 'B', 'None'),
+(123, 'CE123', 'B', 'None'),
+(124, 'CE124', 'B', 'None'),
+(125, 'CE125', 'B', 'None'),
+(126, 'CE126', 'B', 'None'),
+(127, 'CE127', 'B', 'None'),
+(128, 'CE128', 'B', 'None'),
+(129, 'CE129', 'B', 'None'),
+(130, 'CE130', 'B', 'None'),
+(131, 'CE131', 'B', 'None'),
+(132, 'CE132', 'B', 'None'),
+(133, 'CE133', 'B', 'None'),
+(134, 'CE134', 'B', 'None'),
+(135, 'CE135', 'B', 'None'),
+(136, 'CE136', 'B', 'None'),
+(137, 'CE137', 'B', 'None'),
+(138, 'CE138', 'B', 'None'),
+(139, 'CE139', 'B', 'None'),
+(140, 'CE140', 'B', 'None'),
+(141, 'CE141', 'B', 'None'),
+(142, 'CE142', 'B', 'None'),
+(143, 'CE143', 'B', 'None'),
+(144, 'CE144', 'B', 'None'),
+(145, 'CE145', 'B', 'None'),
+(146, 'CE146', 'B', 'None'),
+(147, 'CE147', 'B', 'None'),
+(148, 'CE148', 'B', 'None'),
+(149, 'CE149', 'B', 'None'),
+(150, 'CE150', 'B', 'None'),
+(151, 'CE151', 'B', 'None'),
+(152, 'CE152', 'B', 'None'),
+(153, 'CE153', 'B', 'None');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `monday`
+--
+
+CREATE TABLE `monday` (
+  `No.` int(11) NOT NULL,
+  `Time_A` time NOT NULL,
+  `Lecture_A` varchar(50) DEFAULT NULL,
+  `Time_B` time NOT NULL,
+  `Lecture_B` varchar(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `monday`
+--
+
+INSERT INTO `monday` (`No.`, `Time_A`, `Lecture_A`, `Time_B`, `Lecture_B`) VALUES
+(1, '10:45:00', 'Physics', '14:30:00', 'English'),
+(3, '11:45:00', 'PPS-2', '15:30:00', 'Maths-2'),
+(4, '12:45:00', 'English', '16:35:00', 'PPS-2');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `pass_holder`
+--
+
+CREATE TABLE `pass_holder` (
+  `lecture` varchar(60) NOT NULL,
+  `Division` varchar(1) NOT NULL,
+  `att_start_time` time NOT NULL,
+  `password` varchar(60) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `pass_holder`
+--
+
+INSERT INTO `pass_holder` (`lecture`, `Division`, `att_start_time`, `password`) VALUES
+('Maths-2', 'A', '20:34:43', '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `physics`
+--
+
+CREATE TABLE `physics` (
+  `Sr.` int(11) NOT NULL,
+  `Roll No.` varchar(5) NOT NULL,
+  `Division` char(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `physics`
+--
+
+INSERT INTO `physics` (`Sr.`, `Roll No.`, `Division`) VALUES
+(1, 'CE001', 'A'),
+(2, 'CE002', 'A'),
+(3, 'CE003', 'A'),
+(4, 'CE004', 'A'),
+(5, 'CE005', 'A'),
+(6, 'CE006', 'A'),
+(7, 'CE007', 'A'),
+(8, 'CE008', 'A'),
+(9, 'CE009', 'A'),
+(10, 'CE010', 'A'),
+(11, 'CE011', 'A'),
+(12, 'CE012', 'A'),
+(13, 'CE013', 'A'),
+(14, 'CE014', 'A'),
+(15, 'CE015', 'A'),
+(16, 'CE016', 'A'),
+(17, 'CE017', 'A'),
+(18, 'CE018', 'A'),
+(19, 'CE019', 'A'),
+(20, 'CE020', 'A'),
+(21, 'CE021', 'A'),
+(22, 'CE022', 'A'),
+(23, 'CE023', 'A'),
+(24, 'CE024', 'A'),
+(25, 'CE025', 'A'),
+(26, 'CE026', 'A'),
+(27, 'CE027', 'A'),
+(28, 'CE028', 'A'),
+(29, 'CE029', 'A'),
+(30, 'CE030', 'A'),
+(31, 'CE031', 'A'),
+(32, 'CE032', 'A'),
+(33, 'CE033', 'A'),
+(34, 'CE034', 'A'),
+(35, 'CE035', 'A'),
+(36, 'CE036', 'A'),
+(37, 'CE037', 'A'),
+(38, 'CE038', 'A'),
+(39, 'CE039', 'A'),
+(40, 'CE040', 'A'),
+(41, 'CE041', 'A'),
+(42, 'CE042', 'A'),
+(43, 'CE043', 'A'),
+(44, 'CE044', 'A'),
+(45, 'CE045', 'A'),
+(46, 'CE046', 'A'),
+(47, 'CE047', 'A'),
+(48, 'CE048', 'A'),
+(49, 'CE049', 'A'),
+(50, 'CE050', 'A'),
+(51, 'CE051', 'A'),
+(52, 'CE052', 'A'),
+(53, 'CE053', 'A'),
+(54, 'CE054', 'A'),
+(55, 'CE055', 'A'),
+(56, 'CE056', 'A'),
+(57, 'CE057', 'A'),
+(58, 'CE058', 'A'),
+(59, 'CE059', 'A'),
+(60, 'CE060', 'A'),
+(61, 'CE061', 'A'),
+(62, 'CE062', 'A'),
+(63, 'CE063', 'A'),
+(64, 'CE064', 'A'),
+(65, 'CE065', 'A'),
+(66, 'CE066', 'A'),
+(67, 'CE067', 'A'),
+(68, 'CE068', 'A'),
+(69, 'CE069', 'A'),
+(70, 'CE070', 'A'),
+(71, 'CE071', 'A'),
+(72, 'CE072', 'A'),
+(73, 'CE073', 'A'),
+(74, 'CE074', 'A'),
+(75, 'CE075', 'A'),
+(76, 'CE076', 'A'),
+(77, 'CE077', 'A'),
+(78, 'CE078', 'B'),
+(79, 'CE079', 'B'),
+(80, 'CE080', 'B'),
+(81, 'CE081', 'B'),
+(82, 'CE082', 'B'),
+(83, 'CE083', 'B'),
+(84, 'CE084', 'B'),
+(85, 'CE085', 'B'),
+(86, 'CE086', 'B'),
+(87, 'CE087', 'B'),
+(88, 'CE088', 'B'),
+(89, 'CE089', 'B'),
+(90, 'CE090', 'B'),
+(91, 'CE091', 'B'),
+(92, 'CE092', 'B'),
+(93, 'CE093', 'B'),
+(94, 'CE094', 'B'),
+(95, 'CE095', 'B'),
+(96, 'CE096', 'B'),
+(97, 'CE097', 'B'),
+(98, 'CE098', 'B'),
+(99, 'CE099', 'B'),
+(100, 'CE100', 'B'),
+(101, 'CE101', 'B'),
+(102, 'CE102', 'B'),
+(103, 'CE103', 'B'),
+(104, 'CE104', 'B'),
+(105, 'CE105', 'B'),
+(106, 'CE106', 'B'),
+(107, 'CE107', 'B'),
+(108, 'CE108', 'B'),
+(109, 'CE109', 'B'),
+(110, 'CE110', 'B'),
+(111, 'CE111', 'B'),
+(112, 'CE112', 'B'),
+(113, 'CE113', 'B'),
+(114, 'CE114', 'B'),
+(115, 'CE115', 'B'),
+(116, 'CE116', 'B'),
+(117, 'CE117', 'B'),
+(118, 'CE118', 'B'),
+(119, 'CE119', 'B'),
+(120, 'CE120', 'B'),
+(121, 'CE121', 'B'),
+(122, 'CE122', 'B'),
+(123, 'CE123', 'B'),
+(124, 'CE124', 'B'),
+(125, 'CE125', 'B'),
+(126, 'CE126', 'B'),
+(127, 'CE127', 'B'),
+(128, 'CE128', 'B'),
+(129, 'CE129', 'B'),
+(130, 'CE130', 'B'),
+(131, 'CE131', 'B'),
+(132, 'CE132', 'B'),
+(133, 'CE133', 'B'),
+(134, 'CE134', 'B'),
+(135, 'CE135', 'B'),
+(136, 'CE136', 'B'),
+(137, 'CE137', 'B'),
+(138, 'CE138', 'B'),
+(139, 'CE139', 'B'),
+(140, 'CE140', 'B'),
+(141, 'CE141', 'B'),
+(142, 'CE142', 'B'),
+(143, 'CE143', 'B'),
+(144, 'CE144', 'B'),
+(145, 'CE145', 'B'),
+(146, 'CE146', 'B'),
+(147, 'CE147', 'B'),
+(148, 'CE148', 'B'),
+(149, 'CE149', 'B'),
+(150, 'CE150', 'B'),
+(151, 'CE151', 'B'),
+(152, 'CE152', 'B'),
+(153, 'CE153', 'B');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `pps-2`
+--
+
+CREATE TABLE `pps-2` (
+  `Sr.` int(11) NOT NULL,
+  `Roll No.` varchar(5) NOT NULL,
+  `Division` char(1) NOT NULL,
+  `11-05-2023` varchar(10) DEFAULT 'None'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `pps-2`
+--
+
+INSERT INTO `pps-2` (`Sr.`, `Roll No.`, `Division`, `11-05-2023`) VALUES
+(1, 'CE001', 'A', 'Absent'),
+(2, 'CE002', 'A', 'Absent'),
+(3, 'CE003', 'A', 'Absent'),
+(4, 'CE004', 'A', 'Absent'),
+(5, 'CE005', 'A', 'Absent'),
+(6, 'CE006', 'A', 'Absent'),
+(7, 'CE007', 'A', 'Absent'),
+(8, 'CE008', 'A', 'Absent'),
+(9, 'CE009', 'A', 'Absent'),
+(10, 'CE010', 'A', 'Absent'),
+(11, 'CE011', 'A', 'Absent'),
+(12, 'CE012', 'A', 'Absent'),
+(13, 'CE013', 'A', 'Absent'),
+(14, 'CE014', 'A', 'Absent'),
+(15, 'CE015', 'A', 'Absent'),
+(16, 'CE016', 'A', 'Absent'),
+(17, 'CE017', 'A', 'Absent'),
+(18, 'CE018', 'A', 'Absent'),
+(19, 'CE019', 'A', 'Absent'),
+(20, 'CE020', 'A', 'Absent'),
+(21, 'CE021', 'A', 'Absent'),
+(22, 'CE022', 'A', 'Absent'),
+(23, 'CE023', 'A', 'Absent'),
+(24, 'CE024', 'A', 'Absent'),
+(25, 'CE025', 'A', 'Absent'),
+(26, 'CE026', 'A', 'Absent'),
+(27, 'CE027', 'A', 'Absent'),
+(28, 'CE028', 'A', 'Absent'),
+(29, 'CE029', 'A', 'Absent'),
+(30, 'CE030', 'A', 'Absent'),
+(31, 'CE031', 'A', 'Absent'),
+(32, 'CE032', 'A', 'Absent'),
+(33, 'CE033', 'A', 'Absent'),
+(34, 'CE034', 'A', 'Absent'),
+(35, 'CE035', 'A', 'Absent'),
+(36, 'CE036', 'A', 'Absent'),
+(37, 'CE037', 'A', 'Absent'),
+(38, 'CE038', 'A', 'Absent'),
+(39, 'CE039', 'A', 'Absent'),
+(40, 'CE040', 'A', 'Absent'),
+(41, 'CE041', 'A', 'Absent'),
+(42, 'CE042', 'A', 'Absent'),
+(43, 'CE043', 'A', 'Absent'),
+(44, 'CE044', 'A', 'Absent'),
+(45, 'CE045', 'A', 'Absent'),
+(46, 'CE046', 'A', 'Absent'),
+(47, 'CE047', 'A', 'Absent'),
+(48, 'CE048', 'A', 'Absent'),
+(49, 'CE049', 'A', 'Absent'),
+(50, 'CE050', 'A', 'Absent'),
+(51, 'CE051', 'A', 'Absent'),
+(52, 'CE052', 'A', 'Absent'),
+(53, 'CE053', 'A', 'Absent'),
+(54, 'CE054', 'A', 'Absent'),
+(55, 'CE055', 'A', 'Absent'),
+(56, 'CE056', 'A', 'Absent'),
+(57, 'CE057', 'A', 'Absent'),
+(58, 'CE058', 'A', 'Absent'),
+(59, 'CE059', 'A', 'Absent'),
+(60, 'CE060', 'A', 'Absent'),
+(61, 'CE061', 'A', 'Absent'),
+(62, 'CE062', 'A', 'Absent'),
+(63, 'CE063', 'A', 'Absent'),
+(64, 'CE064', 'A', 'Absent'),
+(65, 'CE065', 'A', 'Absent'),
+(66, 'CE066', 'A', 'Absent'),
+(67, 'CE067', 'A', 'Absent'),
+(68, 'CE068', 'A', 'Absent'),
+(69, 'CE069', 'A', 'Absent'),
+(70, 'CE070', 'A', 'Absent'),
+(71, 'CE071', 'A', 'Absent'),
+(72, 'CE072', 'A', 'Absent'),
+(73, 'CE073', 'A', 'Absent'),
+(74, 'CE074', 'A', 'Absent'),
+(75, 'CE075', 'A', 'Absent'),
+(76, 'CE076', 'A', 'Absent'),
+(77, 'CE077', 'A', 'Absent'),
+(78, 'CE078', 'B', 'None'),
+(79, 'CE079', 'B', 'None'),
+(80, 'CE080', 'B', 'None'),
+(81, 'CE081', 'B', 'None'),
+(82, 'CE082', 'B', 'None'),
+(83, 'CE083', 'B', 'None'),
+(84, 'CE084', 'B', 'None'),
+(85, 'CE085', 'B', 'None'),
+(86, 'CE086', 'B', 'None'),
+(87, 'CE087', 'B', 'None'),
+(88, 'CE088', 'B', 'None'),
+(89, 'CE089', 'B', 'None'),
+(90, 'CE090', 'B', 'None'),
+(91, 'CE091', 'B', 'None'),
+(92, 'CE092', 'B', 'None'),
+(93, 'CE093', 'B', 'None'),
+(94, 'CE094', 'B', 'None'),
+(95, 'CE095', 'B', 'None'),
+(96, 'CE096', 'B', 'None'),
+(97, 'CE097', 'B', 'None'),
+(98, 'CE098', 'B', 'None'),
+(99, 'CE099', 'B', 'None'),
+(100, 'CE100', 'B', 'None'),
+(101, 'CE101', 'B', 'None'),
+(102, 'CE102', 'B', 'None'),
+(103, 'CE103', 'B', 'None'),
+(104, 'CE104', 'B', 'None'),
+(105, 'CE105', 'B', 'None'),
+(106, 'CE106', 'B', 'None'),
+(107, 'CE107', 'B', 'None'),
+(108, 'CE108', 'B', 'None'),
+(109, 'CE109', 'B', 'None'),
+(110, 'CE110', 'B', 'None'),
+(111, 'CE111', 'B', 'None'),
+(112, 'CE112', 'B', 'None'),
+(113, 'CE113', 'B', 'None'),
+(114, 'CE114', 'B', 'None'),
+(115, 'CE115', 'B', 'None'),
+(116, 'CE116', 'B', 'None'),
+(117, 'CE117', 'B', 'None'),
+(118, 'CE118', 'B', 'None'),
+(119, 'CE119', 'B', 'None'),
+(120, 'CE120', 'B', 'None'),
+(121, 'CE121', 'B', 'None'),
+(122, 'CE122', 'B', 'None'),
+(123, 'CE123', 'B', 'None'),
+(124, 'CE124', 'B', 'None'),
+(125, 'CE125', 'B', 'None'),
+(126, 'CE126', 'B', 'None'),
+(127, 'CE127', 'B', 'None'),
+(128, 'CE128', 'B', 'None'),
+(129, 'CE129', 'B', 'None'),
+(130, 'CE130', 'B', 'None'),
+(131, 'CE131', 'B', 'None'),
+(132, 'CE132', 'B', 'None'),
+(133, 'CE133', 'B', 'None'),
+(134, 'CE134', 'B', 'None'),
+(135, 'CE135', 'B', 'None'),
+(136, 'CE136', 'B', 'None'),
+(137, 'CE137', 'B', 'None'),
+(138, 'CE138', 'B', 'None'),
+(139, 'CE139', 'B', 'None'),
+(140, 'CE140', 'B', 'None'),
+(141, 'CE141', 'B', 'None'),
+(142, 'CE142', 'B', 'None'),
+(143, 'CE143', 'B', 'None'),
+(144, 'CE144', 'B', 'None'),
+(145, 'CE145', 'B', 'None'),
+(146, 'CE146', 'B', 'None'),
+(147, 'CE147', 'B', 'None'),
+(148, 'CE148', 'B', 'None'),
+(149, 'CE149', 'B', 'None'),
+(150, 'CE150', 'B', 'None'),
+(151, 'CE151', 'B', 'None'),
+(152, 'CE152', 'B', 'None'),
+(153, 'CE153', 'B', 'None');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `students`
+--
+
+CREATE TABLE `students` (
+  `Roll No.` varchar(5) NOT NULL,
+  `ID` varchar(10) NOT NULL,
+  `Name` varchar(255) NOT NULL,
+  `Enrollment Year` int(11) NOT NULL,
+  `Batch Year` int(11) NOT NULL,
+  `Session No` int(11) NOT NULL,
+  `Gender` varchar(10) NOT NULL,
+  `Division` varchar(1) NOT NULL,
+  `image_id` varchar(25) NOT NULL,
+  `PPS-2` int(11) NOT NULL,
+  `Maths-2` int(11) NOT NULL,
+  `Physics` int(11) NOT NULL,
+  `English` int(11) NOT NULL,
+  `Env. Studies` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `students`
+--
+
+INSERT INTO `students` (`Roll No.`, `ID`, `Name`, `Enrollment Year`, `Batch Year`, `Session No`, `Gender`, `Division`, `image_id`, `PPS-2`, `Maths-2`, `Physics`, `English`, `Env. Studies`) VALUES
+('CE001', '22CEUOS054', 'AGHERA NIRAJ MUKESHBHAI', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE002', '22CEUOS023', 'AKOLA ARYAN NILESHBHAI', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE003', '22CEUEG082', 'AMLANI NISARG KALPESHBHAI', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE004', '22CEUOG094', 'AMRUTIYA RICH BHAVESHBHAI', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE005', '22CEUOS096', 'ANTALA MEET CHIMANLAL', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE006', '22CEUOS001', 'ARSH  GANGANI', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE007', '22CEUOS133', 'BHALODIYA DRASHTI CHANDRAKANTBHAI', 2022, 2022, 2, 'FEMALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE008', '22CEUON114', 'BHANSALI SMIT AJAYBHAI', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE009', '22CEUOS018', 'BHATT HRUTU HIRENKUMAR', 2022, 2022, 2, 'FEMALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE010', '22CEUOS081', 'BHESANIYA JAY RAMESHBHAI', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE011', '22CEUOS024', 'BHUVA PRINS PARESHBHAI', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE012', '22CEUON125', 'BUVARIYA HITARTH DHAVALBHAI', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE013', '22CEUOF070', 'CHANDRAVADIYA KISHAN RAMABHAI', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE014', '22CEUOG051', 'CHANIYARA PRINCEKUMAR KISHORKUMAR', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE015', '22CEUTG129', 'CHAUDHARI DHRUKUMAR SUMANBHAI', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE016', '22CEUTG048', 'CHAUDHARI KRISH LALBHAI', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE017', '22CEUBG049', 'CHAVDA JAY KISHORBHAI', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE018', '22CEUOS017', 'DEDANIYA DEVANSHI KETANBHAI', 2022, 2022, 2, 'FEMALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE019', '22CEUOS016', 'DEKAVADIYA JAIMIN PRAKASHBHAI', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE020', '22CEUBG074', 'DERVALIYA KISHAN BHARATBHAI', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE021', '22CEUON126', 'DESAI AMAN VINAYKUMAR', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE022', '22CEUOS021', 'DESAI KRISH JENISH', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE023', '22CEUOS147', 'DHAMELIYA DIVYANG RAJESHKUMAR', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE024', '22CEUOS140', 'DHAMELIYA PARTHIVKUMAR VINUBHAI', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE025', '22CEUOS004', 'DHAMSANIA DHRUVIL ARVINDBHAI', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE026', '22CEUEG136', 'DHANANI VAIBHAV VIJAYBHAI', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE027', '22CEUON109', 'DOBARIYA MEET MANOJBHAI', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE028', '22CEUOS146', 'DOBARIYA VRUND GHANSHYAMBHAI', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE029', '22CEUON122', 'FADADU KHANJAN ARVINDBHAI', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE030', '22CEUOS020', 'FALDU ARPIT KIRTIBHAI', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE031', '22CEUOS098', 'GABANI KULDEEP NARESHBHAI', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE032', '22CEUOS137', 'GABANI YASH NITESHBHAI', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE033', '22CEUOS052', 'GAJERA JAIMIN NILESHBHAI', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE034', '22CEUOS088', 'GAJERA KAVAN SANJEEVBHAI', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE035', '22CEUOS068', 'GAJERA RUSHANGKUMAR MANOJBHAI', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE036', '22CEUOF152', 'GAJIPURWALA AMATULLA AKBARI', 2022, 2022, 2, 'FEMALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE037', '22CEUBS073', 'GANDHI NITYA VIJAYBHAI', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE038', '22CEUBS036', 'GANJAWALA SAMARTH SANJAYBHAI', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE039', '22CEUTG058', 'GANVIT NIKUNJKUMAR PRAVINBHAI', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE040', '22CEUOG095', 'GARALA MAHEK RAMESHBHAI', 2022, 2022, 2, 'FEMALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE041', '22CEUTS062', 'GARASIA NRUSHANSH AMRUTBHAI', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE042', '22CEUBG064', 'GOHEL AKSHAY RAJEDRAKUMAR', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE043', '22CEUOG055', 'GOHIL NANABHAI GAMBHIRBHAI', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE044', '22CEUOG045', 'GOHIL SUMIT JITENDRAKUMAR', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE045', '22CEUOG043', 'GUPTA SANKET KALPESHBHAI', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE046', '22CEUBS092', 'GURJAR KARAN VIJAYBHAI', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE047', '22CEUBG071', 'HADIYAL MEHUL MOHAN', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE048', '22CEUOS013', 'HARANIYA SMITKUMAR NITESHBHAI', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE049', '22CEUON112', 'HUSENI SAIF SAHIL', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE050', '22CEUBS019', 'JAMBUDIYA HEET KETANKUMAR', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE051', '22CEUOS154', 'JANI MAHARSHI DIPAK', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE052', '22CEUOS007', 'KALARIYA MANAV HITESHBHAI', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE053', '22CEUBG032', 'KALSARIYA PRASHANT CHHABILBHAI', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE054', '22CEUBG076', 'KALSARIYA ZARNA UMESHBHAI', 2022, 2022, 2, 'FEMALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE055', '22CEUOS080', 'KANERIYA UTSAV UMEDBHAI', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE056', '22CEUBG042', 'KARANGIYA MIHIRKUMAR PARBATBHAI', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE057', '22CEUOS083', 'KHUNT NIL PRAVINBHAI', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE058', '22CEUES115', 'KOTADIYA ABHI HITESHBHAI', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE059', '22CEUOS132', 'KOTHIA VIDHI KEYURBHAI', 2022, 2022, 2, 'FEMALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE060', '22CEUOG155', 'KUNAL  BHAT', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE061', '22CEUBS121', 'LAD CHINTAN YAGNESHKUMAR', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE062', '22CEUBS099', 'LADVA RIDDHI DHARMENDRABHAI', 2022, 2022, 2, 'FEMALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE063', '22CEUOF066', 'LAKUM VIPUL DINESHBHAI', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE064', '22CEUBS142', 'MACHCHH HIRAXBHAI HARSUKHBHAI', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE065', '22CEUOS117', 'MADARIYA KANJI NARENDRABHAI', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE066', '22CEUBG138', 'MAKWANA VAIBHAV SHARADBHAI', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE067', '22CEUTS128', 'MANAS RAJABHAI GARCHAR  ', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE068', '22CEUON111', 'MEGHANI MAYANK PARESHBHAI', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE069', '22CEUOS002', 'MEHTA UDIT NILESHBHAI', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE070', '22CEUBG029', 'MISTRY KINJAL BHAVESHBHAI', 2022, 2022, 2, 'FEMALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE071', '22CEUBS085', 'MISTRY MEET PRASHANT', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE072', '22CEUBG061', 'MODH MEET SUDHIRKUMAR', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE073', '22CEUBG044', 'MODI JAINIL GIRISHKUMAR', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE074', '22CEUOG059', 'MOKARIYA PRADIP KESHUBHAI', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE075', '22CEUTG091', 'MUNIYA VANDITKUMAR AMBUBHAI', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE076', '22CEUOS148', 'OJAS  TIKKU', 2022, 2022, 2, 'MALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE077', '22CEUON107', 'PADSHALA SMRUTI RAMESHBHAI', 2022, 2022, 2, 'FEMALE', 'A', '123.png', 30, 30, 15, 15, 13),
+('CE078', '22CEUOS150', 'PARIKH HET BRIJESH', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE079', '22CEUES090', 'PARMAR DHARMIK HITENDRABHAI', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE080', '22CEUOG034', 'PARMAR KULDIP RUPSANGBHAI', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE081', '22CEUBG144', 'PARMAR LAKHAMAN JIVA', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE082', '22CEUSG046', 'PARMAR NISARG ASHOKKUMAR', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE083', '22CEUOT130', 'PARMAR VANRAJBHAI JAYANTIBHAI', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE084', '22CEUOS012', 'PATADIA HARSH KRUSHNAKANT', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE085', '22CEUOS039', 'PATEL AARYA DHARMENDRABHAI', 2022, 2022, 2, 'FEMALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE086', '22CEUTG030', 'PATEL AAYUSHI RASIKBHAI', 2022, 2022, 2, 'FEMALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE087', '22CEUTF143', 'PATEL AVANI JAYESHKUMAR', 2022, 2022, 2, 'FEMALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE088', '22CEUOS151', 'PATEL DEV DIPESH', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE089', '22CEUOS026', 'PATEL DHRUV PANKAJ', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE090', '22CEUOG050', 'PATEL DHRUV RAJENDRA', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE091', '22CEUBG028', 'PATEL DISHA JAYESHBHAI', 2022, 2022, 2, 'FEMALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE092', '22CEUON156', 'PATEL KRIS HITESHKUMAR', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE093', '22CEUBS153', 'PATEL MEET RAMESHBHAI', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE094', '22CEUOS005', 'PATEL NAITIKKUMAR HASMUKHBHAI', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE095', '22CEUOS011', 'PATEL NEEL HITENDRABHAI', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE096', '22CEUOG041', 'PATEL NEHABEN YOGESHKUMAR', 2022, 2022, 2, 'FEMALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE097', '22CEUON110', 'PATEL NEIL DILIPBHAI', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE098', '22CEUOT075', 'PATEL NISARG DINESHBHAI', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE099', '22CEUON123', 'PATEL OM MANUBHAI', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE100', '22CEUOS135', 'PATEL RUDRA KETAN', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE101', '22CEUTG063', 'PATEL SHIVANSH VIJAY', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE102', '22CEUOS131', 'PATEL TIRTH RAJUBHAI', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE103', '22CEUOS015', 'PATEL UTSAV CHETANBHAI', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE104', '22CEUON102', 'PATEL VEDANT  RUPESHBHAI', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE105', '22CEUON127', 'POPAT NIHAR RAVI', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE106', '22CEUOS006', 'PRAJAPATI HET PARESHKUMAR', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE107', '22CEUON113', 'PRIYANSH KETANKUMAR PATEL', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE108', '22CEUOF093', 'RADADIYA JAY VIJAYBHAI', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE109', '22CEUES149', 'RAKHOLIYA NIHAR VIPULBHAI', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE110', '22CEUTG077', 'RATHOD VANSH CHETANBHAI', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE111', '22CEUON157', 'SAHIL SUMANT BHAT', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE112', '22CEUOS100', 'SANGHANI PUJAN MAHESHBHAI', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE113', '22CEUOS108', 'SAVALIYA ACHYUT ANILKUMAR', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE114', '22CEUEG033', 'SHAH APEKSHA DILIPBHAI', 2022, 2022, 2, 'FEMALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE115', '22CEUON103', 'SHAH ATREY SNEHAL', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE116', '22CEUON116', 'SHAH DEV PURVANSHBHAI', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE117', '22CEUON106', 'SHAH KAVIN PRAGNESHKUMAR', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE118', '22CEUON105', 'SHAH KAVYA ATULKUMAR', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE119', '22CEUOS009', 'SHAH SHEEL NIRAV', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE120', '22CEUON104', 'SHAH SMIT HITESH', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE121', '22CEUOS139', 'SHAH VEER PIYUSHKUMAR', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE122', '22CEUOS141', 'SHETH TITHAAL KETAN', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE123', '22CEUOS025', 'SOLANKI JANVI VIJAYBHAI', 2022, 2022, 2, 'FEMALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE124', '22CEUBS057', 'SOLANKI VATSALRAJ VIJAYSINH', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE125', '22CEUOG031', 'SONEJI MAHAMAD RAZA MAHAMADAFZAL', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE126', '22CEUOG040', 'SORATHIYA SAHIL UMARBHAI', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE127', '22CEUOS027', 'SORATHIYA SWARAJ CHETANBHAI', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE128', '22CEUSG067', 'SURATI IRA PRATAPBHAI', 2022, 2022, 2, 'FEMALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE129', '22CEUEG078', 'SUREJA ARCHANKUMAR AJITBHAI', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE130', '22CEUOG035', 'TALSANIYA DARSHIT MAHESHBHAI', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE131', '22CEUBG118', 'TAROFAWALA SAHIL DHARMESHKUMAR', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE132', '22CEUON124', 'THAKKAR ANISH HITESH', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE133', '22CEUOS047', 'THAKKAR MEET ALPESHBHAI', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE134', '22CEUOG056', 'TIMBADIYA DISHA NILESHKUMAR', 2022, 2022, 2, 'FEMALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE135', '22CEUSF097', 'UMARVANSHI KHUSHI ISHWARBHAI', 2022, 2022, 2, 'FEMALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE136', '22CEUOS079', 'UNDHAD SAHIL SANJAYBHAI', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE137', '22CEUTF145', 'URVI  VASAVA', 2022, 2022, 2, 'FEMALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE138', '22CEUON120', 'VACHHANI SHYAM DINESHBHAI', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE139', '22CEUBG038', 'VADHEL MILANKUMAR NARESHBHAI', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE140', '22CEUBS101', 'VADHER AKSHAR ANANDBHAI', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE141', '22CEUOF072', 'VADODARIYA JIMESH MANOJBHAI', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE142', '22CEUOS084', 'VAGHASIA SRUSHTI RAJESHBHAI', 2022, 2022, 2, 'FEMALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE143', '22CEUOS089', 'VAGHASIYA PRINCE SHAILESHBHAI', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE144', '22CEUBS037', 'VAHORA DANISHBHAI SOHELBHAI', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE145', '22CEUHG087', 'VALA MANISHKUMAR DANABHAI', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE146', '22CEUOT134', 'VAMJA JENISH VIJAYBHAI', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE147', '22CEUTS086', 'VASAVA PARTH SANDEEPBHAI', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE148', '22CEUOS014', 'VEKARIYA VASU PIYUSHBHAI', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE149', '22CEUOG053', 'VITHANI YUG NIPULBHAI', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE150', '22CEUBG065', 'VORA SHAHILBHAI IRFANBHAI', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE151', '22CEUOS008', 'VYAS DARSHIT DHARMESH', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE152', '22CEUEG060', 'ZALA HARSHPALSINH CHAMPAKSINH', 2022, 2022, 2, 'MALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('CE153', '22CEUBG069', 'ZANKAT NENSEE KEESHORBHAI', 2022, 2022, 2, 'FEMALE', 'B', '123.png', 30, 30, 15, 15, 13),
+('Roll ', 'StudentID', 'Name', 0, 0, 0, 'Gender', 'D', '123.png', 0, 0, 0, 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `teachers_data`
+--
+
+CREATE TABLE `teachers_data` (
+  `No.` int(11) NOT NULL,
+  `Name` varchar(50) NOT NULL,
+  `ID` varchar(10) NOT NULL,
+  `Password` varchar(10) NOT NULL,
+  `lecture` varchar(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `teachers_data`
+--
+
+INSERT INTO `teachers_data` (`No.`, `Name`, `ID`, `Password`, `lecture`) VALUES
+(1, 'Chintan Chatterjee', 'chintan', 'cc@ddu', 'PPS-2'),
+(2, 'Kailsh Patil', 'kailash', 'kmp@ddu', 'Maths-2'),
+(3, 'Vimal Patel', 'vimal', 'vbp@ddu', 'Maths-2'),
+(4, 'Jigar Pandya', 'jigar', 'jmp@ddu', 'PPS-2'),
+(6, 'Madhav Astik', 'madhav', 'ma@ddu', 'English'),
+(7, 'Kaisarjahan Ansari', 'kaisar', 'kaiser@ddu', 'English'),
+(8, 'Shital Shah', 'shital', 'sss@ddu', 'Physics'),
+(9, 'Shaifali Malukani', 'shaifali', 'spm@ddu', 'Physics');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `thursday`
+--
+
+CREATE TABLE `thursday` (
+  `No.` int(11) NOT NULL,
+  `Time_A` time NOT NULL DEFAULT '00:45:00',
+  `Lecture_A` varchar(50) NOT NULL,
+  `Time_B` time DEFAULT NULL,
+  `Lecture_B` varchar(50) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `thursday`
+--
+
+INSERT INTO `thursday` (`No.`, `Time_A`, `Lecture_A`, `Time_B`, `Lecture_B`) VALUES
+(1, '10:45:00', 'English', '14:30:00', 'PPS-2'),
+(2, '11:45:00', 'PPS-2', '15:30:00', 'Physics'),
+(3, '12:45:00', 'Physics', '16:35:00', 'Maths-2');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tuesday`
+--
+
+CREATE TABLE `tuesday` (
+  `No.` int(11) NOT NULL,
+  `Time_A` time NOT NULL,
+  `Lecture_A` varchar(50) DEFAULT NULL,
+  `Time_B` time NOT NULL,
+  `Lecture_B` varchar(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `tuesday`
+--
+
+INSERT INTO `tuesday` (`No.`, `Time_A`, `Lecture_A`, `Time_B`, `Lecture_B`) VALUES
+(1, '10:45:00', 'Maths-2', '14:30:00', 'Physics'),
+(2, '11:45:00', 'Physics', '15:30:00', 'PPS-2'),
+(3, '12:45:00', 'PPS-2', '16:35:00', 'Maths-2');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `wednesday`
+--
+
+CREATE TABLE `wednesday` (
+  `No.` int(11) NOT NULL,
+  `Time_A` time DEFAULT NULL,
+  `Lecture_A` varchar(50) DEFAULT NULL,
+  `Time_B` time DEFAULT NULL,
+  `Lecture_B` varchar(50) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `wednesday`
+--
+
+INSERT INTO `wednesday` (`No.`, `Time_A`, `Lecture_A`, `Time_B`, `Lecture_B`) VALUES
+(1, '10:45:00', 'Env. Studies', '14:30:00', 'PPS-2'),
+(2, '11:45:00', 'Env. Studies', '15:30:00', 'Physics'),
+(3, '12:45:00', 'Maths-2', '16:35:00', 'English');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `english`
+--
+ALTER TABLE `english`
+  ADD PRIMARY KEY (`Sr.`);
+
+--
+-- Indexes for table `friday`
+--
+ALTER TABLE `friday`
+  ADD PRIMARY KEY (`No.`);
+
+--
+-- Indexes for table `maths-2`
+--
+ALTER TABLE `maths-2`
+  ADD PRIMARY KEY (`Sr.`);
+
+--
+-- Indexes for table `monday`
+--
+ALTER TABLE `monday`
+  ADD PRIMARY KEY (`No.`);
+
+--
+-- Indexes for table `pass_holder`
+--
+ALTER TABLE `pass_holder`
+  ADD PRIMARY KEY (`lecture`);
+
+--
+-- Indexes for table `physics`
+--
+ALTER TABLE `physics`
+  ADD PRIMARY KEY (`Sr.`);
+
+--
+-- Indexes for table `pps-2`
+--
+ALTER TABLE `pps-2`
+  ADD PRIMARY KEY (`Sr.`);
+
+--
+-- Indexes for table `students`
+--
+ALTER TABLE `students`
+  ADD PRIMARY KEY (`Roll No.`);
+
+--
+-- Indexes for table `teachers_data`
+--
+ALTER TABLE `teachers_data`
+  ADD PRIMARY KEY (`No.`);
+
+--
+-- Indexes for table `thursday`
+--
+ALTER TABLE `thursday`
+  ADD PRIMARY KEY (`No.`);
+
+--
+-- Indexes for table `tuesday`
+--
+ALTER TABLE `tuesday`
+  ADD PRIMARY KEY (`No.`);
+
+--
+-- Indexes for table `wednesday`
+--
+ALTER TABLE `wednesday`
+  ADD PRIMARY KEY (`No.`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `english`
+--
+ALTER TABLE `english`
+  MODIFY `Sr.` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=154;
+
+--
+-- AUTO_INCREMENT for table `maths-2`
+--
+ALTER TABLE `maths-2`
+  MODIFY `Sr.` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=154;
+
+--
+-- AUTO_INCREMENT for table `monday`
+--
+ALTER TABLE `monday`
+  MODIFY `No.` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `physics`
+--
+ALTER TABLE `physics`
+  MODIFY `Sr.` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=154;
+
+--
+-- AUTO_INCREMENT for table `pps-2`
+--
+ALTER TABLE `pps-2`
+  MODIFY `Sr.` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=154;
+
+--
+-- AUTO_INCREMENT for table `teachers_data`
+--
+ALTER TABLE `teachers_data`
+  MODIFY `No.` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
+-- AUTO_INCREMENT for table `tuesday`
+--
+ALTER TABLE `tuesday`
+  MODIFY `No.` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
