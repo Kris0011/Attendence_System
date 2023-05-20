@@ -15,10 +15,10 @@
     // else{
         $servername = "localhost";
         $username = "root";
-        $password = "";
+        $password1 = "";
         $dbname = "att1";
 
-        $conn = mysqli_connect($servername, $username, $password, $dbname);
+        $conn = mysqli_connect($servername, $username, $password1, $dbname);
 
         // Check if the connection was successful
         if (!$conn) {
