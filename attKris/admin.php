@@ -11,8 +11,8 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-<!-- changed by naitk -->
-<div id="main-content">
+<!-- changed by naitk  2-->
+<div id="main-content" >
     <h2>All Records</h2>
     <?php
         $conn = mysqli_connect("localhost","root","","ce") or die("connection Failed");
