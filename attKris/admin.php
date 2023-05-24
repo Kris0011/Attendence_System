@@ -11,7 +11,7 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-
+<!-- changed by naitk -->
 <div id="main-content">
     <h2>All Records</h2>
     <?php
