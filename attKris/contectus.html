@@ -72,7 +72,7 @@
 <h1 style="text-align: center;">Leave Form</h1>
 <hr>
 <div class="container">
-    <form method="get">
+    <form method="post" action="leave.php">
         <p>
             <label for="fname">Name :</label>
             <input type="text" id="fname" name="fname" placeholder="Enter Your Name" required>
@@ -89,11 +89,15 @@
         </p>
         <p>
             <label for="date">Starting Date:</label>
-			<input type="date" name="date" id="date" class="form-control">
+			<input type="date" name="date1" id="date1" class="form-control">
         </p>
         <p>
             <label for="date">last Date:</label>
-			<input type="date" name="date" id="date" class="form-control">
+			<input type="date" name="date2" id="date2" class="form-control">
+        </p>
+        <p>
+            <label for="fname">Teacher Name :</label>
+            <input type="text" id="tname" name="tname" placeholder="Enter Teacher Name Would You Like To mail You" required>
         </p>
         <p>
             <label for="email">E-Mail:</label>
