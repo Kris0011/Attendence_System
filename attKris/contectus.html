@@ -89,11 +89,11 @@
         </p>
         <p>
             <label for="date">Starting Date:</label>
-			<input type="date" name="date1" id="date1" class="form-control">
+			<input type="date" name="date1" id="date1" class="form-control" required>
         </p>
         <p>
             <label for="date">last Date:</label>
-			<input type="date" name="date2" id="date2" class="form-control">
+			<input type="date" name="date2" id="date2" class="form-control" required>
         </p>
         <p>
             <label for="fname">Teacher Name :</label>
@@ -104,8 +104,10 @@
             <input type="email" id="email" name="email" placeholder="Enter Your E-mail Address" required>
         </p>
 
-        <p>Reson:</p>
-        <p></p><textarea name="Comment"></textarea></p>
+        <p>
+            <label for="m">Reason:</label>
+            <textarea id="m" name="m" required></textarea>
+        </p>
         
         <input type="submit" name="submit" value="Submit">
         &nbsp;
