@@ -141,6 +141,11 @@ if (isset($_FILES['image']) && $_FILES['image']['error'] === UPLOAD_ERR_OK) {
                             </a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="contectus.html">
+                                <i class="bi bi-calendar2-check-fill me-2"></i>Mail
+                            </a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="stimetable.php">
                                 <i class="bi bi-table me-2"></i>Time-Table
                             </a>
