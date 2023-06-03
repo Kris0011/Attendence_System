@@ -8,6 +8,15 @@ $name = $_POST['name'];
 session_start();
 
 require 'config.php';
+$roll = $_SESSION['Roll No.'];
+$today = date('d-m-Y');
+$query = "SELECT * FROM `$lecture` WHERE `Roll No.` = '$roll'";
+$result = mysqli_query($conn, $query);
+$row = mysqli_fetch_assoc($result);
+$value = $row[$today];
+if($value == "Present"){
+    die("<h1>Your Attendence is already noted for this lecture.</h1>");
+}
 
 $current_time = date('H:i:s');
 
@@ -15,12 +24,13 @@ $query = "SELECT * FROM `pass_holder` WHERE `lecture` = '$lecture'";
 $result = mysqli_query($conn,$query);
 $row = mysqli_fetch_assoc($result);
 if($current_time < $time){
-    die("Lecture not started yet.");
+    die("<h1>Lecture not started yet.</h1>");
 }
 
 elseif(mysqli_num_rows($result) == 0){
-    die("Teacher has not started taking attendence yet.");
+    die("<h1>Teacher has not started taking attendence yet.</h1>");
 }
+
 
 
 ?>
