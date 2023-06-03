@@ -222,7 +222,7 @@ if (isset($_FILES['image']) && $_FILES['image']['error'] === UPLOAD_ERR_OK) {
                 <div class="mb-3">
                     <label class="form-label">Profile Picture</label>
                     <input type="file" class="form-control" name="image">
-                    <button type="submit" class="btn btn-primary">Update</button>
+                    <button type="submit" style="margin-top: 10px;" class="btn btn-primary">Update</button>
                     <?php
                     $sql = "UPDATE `students` SET `image_id` = '$image_id' WHERE `ID`='$ID' ";
                     mysqli_query($conn,$sql) or die("unsuccesful Query");
