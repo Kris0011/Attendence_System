@@ -49,7 +49,7 @@ if($studentpass == $teacherpass){
         die("something went wrong, please try again.");
     }
     else{
-        echo "<h1 style=\"textalign:center;\">attendence successful ".$lecture." ".$date." ".$roll."</h1>";
+       echo '<h1 style="  text-align:center;">attendence successful '.$lecture.' '.$date.' '.$roll.'</h1>';
     }
 }
 else{
