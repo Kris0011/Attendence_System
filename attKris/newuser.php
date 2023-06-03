@@ -31,11 +31,11 @@ $resultname=mysqli_query($conn,$sql2);
 
 
 if(mysqli_num_rows($resultid)!=0){
-    echo "This ID already exists. Please try again with new ID.";
+    echo "<h1>This ID already exists. Please try again with new ID.</h1>";
 }
 
 else if(mysqli_num_rows($resultname)!=0){
-    echo "This name already exists. Please try again with new name.";
+    echo "<h1>This name already exists. Please try again with new name.</h1>";
 }
 
 else{
@@ -46,13 +46,13 @@ else{
         $addstmt="INSERT INTO `students_datab` (`ID`,`Roll No.`,`Name`) VALUES ('$ID','$pass','$name')";
     }
     $result=mysqli_query($conn,$addstmt);
-    if($result == 'true'){
-        echo "New User created succesfully. You will be sent back to login page. Login with your new password and id.";
+    if($result){
+        echo "<h1>New User created succesfully. You will be sent back to login page. Login with your new password and id.</h1>";
         sleep(5);
         header("Location: login.html");
     }
     else{
-        echo "Something went wrong. Please try again.";
+        echo "<h1>Something went wrong. Please try again.</h1>";
     }
 }
 

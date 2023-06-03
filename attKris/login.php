@@ -29,11 +29,27 @@ if ($role == 'teacher') {
       header('Location: tdashboard.php');
     } else {
       // Password incorrect, display error message
-      echo 'Incorrect password';
+      
+      echo '<script>
+        if(confirm("Incorrect password.Press `ok` or `cancel` to go back to login page.")){
+          window.location.replace("index.html");
+        }
+        else{
+          window.location.replace("index.html");
+        }
+      </script>';
+      // header('index.html');
     }
   } else {
     // Teacher ID not found, display error message
-    echo 'Teacher ID not found';
+    echo '<script>
+        if(confirm("Teacher ID not found.Press `ok` or `cancel` to go back to login page.")){
+          window.location.replace("index.html");
+        }
+        else{
+          window.location.replace("index.html");
+        }
+      </script>';
   }
 } elseif($role == 'student') {
   $sql = "SELECT * FROM `students` WHERE `ID`='$ID'";
@@ -57,11 +73,25 @@ if ($role == 'teacher') {
       header('Location: sdashboard.php');
     } else {
       // Password incorrect, display error message
-      echo 'Incorrect password';
+      echo '<script>
+        if(confirm("Incorrect password.Press `ok` or `cancel` to go back to login page.")){
+          window.location.replace("index.html");
+        }
+        else{
+          window.location.replace("index.html");
+        }
+      </script>';
     }
   } else {
     // Student ID not found, display error message
-    echo 'Student ID not found';
+    echo '<script>
+        if(confirm("Student ID not found.Press `ok` or `cancel` to go back to login page.")){
+          window.location.replace("index.html");
+        }
+        else{
+          window.location.replace("index.html");
+        }
+      </script>';
   }
 }
 elseif($role == 'admin'){
@@ -69,6 +99,16 @@ elseif($role == 'admin'){
     $result = mysqli_query($conn, $sql);
     if(mysqli_num_rows($result) > 0){
       header('Location: admin.php');
+    }
+    else{
+      echo '<script>
+        if(confirm("Incorrect Admin login details.Press `ok` or `cancel` to go back to login page.")){
+          window.location.replace("index.html");
+        }
+        else{
+          window.location.replace("index.html");
+        }
+      </script>';
     }
 
 

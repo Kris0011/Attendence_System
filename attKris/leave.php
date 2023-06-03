@@ -6,14 +6,14 @@
     if (isset($_POST['date1'])) {
         $startingdate = $_POST['date1'];
     } else {
-        echo "something error occured";
+        echo "<h1>starting date not set.</h1>";
     }
     if (isset($_POST['date2'])) {
         $endingdate = $_POST['date2'];
     } 
     else 
     {
-        echo "something error occured";
+        echo "<h1>ending date not set.</h1>";
     }    
     
 //Import PHPMailer classes into the global namespace

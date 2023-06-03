@@ -4,6 +4,13 @@ $time = $_POST['time'];
 $lecture = $_POST['lecture'];
 $div = $_POST['Division'];
 
+$currenttime = date('H:i:s');
+if($currenttime < $time){
+    echo "<h1>The lecture has not started yet. you will be redirected back to dashboard in 5 sec.</h1>";
+    sleep(5);
+    header('location: tdashboard.php');
+}
+
 ?>
 
 <!DOCTYPE html>

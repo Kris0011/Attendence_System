@@ -9,7 +9,7 @@ require 'config.php';
 
 $query = "DELETE FROM `pass_holder` WHERE  `lecture` = '$lecture'";
 if(mysqli_query($conn,$query))
-    echo "Attendence taken successfully.";
+    echo "<h1>Attendence taken successfully.</h1>";
 else
     die("could not end attendence.Error:".mysqli_error($conn));
 ?>
