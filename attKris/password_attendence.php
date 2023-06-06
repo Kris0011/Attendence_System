@@ -6,9 +6,17 @@ $div = $_POST['Division'];
 
 $currenttime = date('H:i:s');
 if($currenttime < $time){
-    echo "<h1>The lecture has not started yet. you will be redirected back to dashboard in 5 sec.</h1>";
-    sleep(5);
-    header('location: tdashboard.php');
+    echo '<script>
+            alert("The lecture has not started yet. you will be redirected back to dashboard.");
+            const myTimeout = setTimeout(myStopFunction, 10);
+
+        function myStopFunction() {
+            clearTimeout(myTimeout);
+            window.location.replace("tdashboard.php");
+            
+        }
+            </script>';
+    
 }
 
 ?>
