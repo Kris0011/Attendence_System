@@ -39,7 +39,7 @@ if (!$column_exists) {
     $result3 = mysqli_query($conn, $sql3);
   } else {
     // Error creating column
-    echo "Error creating column: " . $conn->error;
+    echo "Error creating column: " . $conn->error();
   }
 } else {
   // Column already exists, do nothing
